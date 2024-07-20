@@ -1,0 +1,9 @@
+baseURL = 'https://www.delifnwasch.de/'
+languageCode = 'de'
+title = 'Delifnwasch'
+
+enableRobotsTXT = true
+disableKinds = ["taxonomy"]
+
+[params]
+description = 'www.delifnwasch.de - da stimmt doch was nicht.'
