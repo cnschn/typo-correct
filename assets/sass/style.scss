@@ -70,7 +70,7 @@ body {
     justify-content: space-around;
     min-height: 100vh;
     min-height: 100svh;
-    
+    padding: 1em;
 }
 
 /* appear */
@@ -133,11 +133,16 @@ footer a {
     color: inherit;
 }
 
+/* misc */
+span.nobreak {
+    display: inline-block;
+}
+
 
 /* media queries */
 
 @media only screen and (max-width: 768px) {
     h1 {
-	font-size: 2em;
+	font-size: 1.8em;
     }
 }
