@@ -22,15 +22,24 @@ html {
     font-family: 'Overpass Mono', monospace;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 h1 {
+    display: inline;
     font-size: 3em;
     font-family: 'Overpass', sans-serif;
     padding-bottom: 0;
-    line-height: 80%;
     border-bottom: 3px transparent solid;
     animation: underline 0.5s forwards;
     animation-delay: 4.5s;
     box-sizing: border-box;
+}
+
+main div {
+    margin-bottom: 2em;
 }
 
 @keyframes underline {
@@ -66,6 +75,7 @@ body {
 
 /* appear */
 main p {
+    margin: 0.3em;
     opacity: 0;
     animation: appear 0.5s forwards;
     animation-delay: 1s;
@@ -113,47 +123,6 @@ span#typo {
     }
 }
 
-/* slide-in */
-article h1 {
-    animation: slidein 0.7s ease;
-}
-article p:nth-child(2) {
-    animation: slidein2 0.7s ease;
-}
-article p:nth-child(3) {
-    animation: slidein2 0.8s ease;
-}
-article p:nth-child(4) {
-    animation: slidein2 0.9s ease;
-}
-article p:nth-child(5) {
-    animation: slidein3 3s ease;
-}
-@keyframes slidein {
-    0%, 10% {
-	transform: translateX(100vw);
-    }
-    100% {
-	transform: translateX(0);
-    }
-}
-@keyframes slidein2 {
-    0%, 30% {
-	transform: translateX(100vw);
-    }
-    100% {
-	transform: translateX(0);
-    }
-}
-@keyframes slidein3 {
-    0%, 85% {
-	transform: translateX(100vw);
-    }
-    100% {
-	transform: translateX(0);
-    }
-}
-
 /* footer */
 
 footer {
@@ -170,9 +139,5 @@ footer a {
 @media only screen and (max-width: 768px) {
     h1 {
 	font-size: 2em;
-    }
-
-    aside img {
-	width: 7em;
     }
 }
